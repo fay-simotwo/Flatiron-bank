@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Flatiron Bank
+This project is a web application built using React.js to manage bank transactions. It allows users to add, delete, search, and sort transactions with a user-friendly interface. The application presents a list of transactions, each with a date, description, category, and amount. Users can add new transactions through a form, and the transactions are displayed in a visually appealing manner.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Key Features:
+- Transaction Management: Users can add new transactions by entering the date, description, amount, and category. They can also delete transactions they no longer need.
 
-## Available Scripts
+- Search Functionality: The application provides a search bar where users can enter a search term, and the list of transactions will be filtered to show only those that match the description containing the search term.
 
-In the project directory, you can run:
+- Sorting Transactions: Users can sort the list of transactions by category or description, helping them quickly organize and find specific transactions.
 
-### `npm start`
+- Responsive Design: The application is designed with responsive CSS styles, ensuring it works well and maintains its usability on different screen sizes, including mobile devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Styling and User Experience: The project includes well-designed styles, including color schemes, hover effects, and visual feedback, to enhance the overall user experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Overall, this project demonstrates the implementation of a simple but functional transaction management system using React.js and demonstrates how to interact with a server to fetch and update transaction data. It could be used as a starting point for more complex financial management applications or adapted for various other data management purposes.
+## Author
+CHEPKOECH FAITH
 
-### `npm test`
+## Technologies Used
+- React.js: The core technology used for building the user interface. React is a popular JavaScript library for creating reusable UI components and managing the application's state efficiently.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- JavaScript (ES6+): The primary programming language used in the project. ECMAScript 6 (ES6) and later versions of JavaScript provide modern syntax and features that enhance code readability and maintainability.
 
-### `npm run build`
+- Axios: A JavaScript library used to make HTTP requests from the client-side. In this project, Axios is used to fetch transaction data from the server and send new transaction data to the server.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML: The standard markup language used to structure the web pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- CSS: The Cascading Style Sheets language used to apply styles and layout to the HTML elements, ensuring the application has a visually appealing and user-friendly interface.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- CSS Flexbox: Flexbox is a CSS layout module that provides a flexible way to arrange and align items within a container. It is used in the project to create a responsive and well-organized layout for the form and list of transactions.
 
-### `npm run eject`
+- Media Queries: CSS media queries are used to implement responsive design. They allow the application to adapt its layout and styles based on the user's device screen size, ensuring a better user experience on various devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- API: The project likely communicates with a server using a RESTful API to fetch and send transaction data. REST (Representational State Transfer) is an architectural style used for designing networked applications.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Overall, the combination of React.js, Axios, JavaScript, HTML, and CSS allows the project to create a dynamic and interactive web application for managing bank transactions. The project's use of modern technologies and responsive design ensures that users can easily interact with the application on different devices and screen sizes. Additionally, the utilization of RESTful API principles enables smooth communication between the client-side application and the server-side, facilitating data retrieval and updates.
+## Installation
+```
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   git clone git@github.com:fay-simotwo/Flatiron-bank.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navigate to the project directory:
+   cd flatiron-bank
 
-## Learn More
+3. Install dependancies:
+   npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the Development server:
+   npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Build the production version:
+   npm run build 
 
-### Code Splitting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+- Adding Transactions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Open the application in your web browser by navigating to http://localhost:3000.
+Click on the "Add Transaction" button at the top of the page to open the form.
+Enter the date, description, amount, and category for the new transaction in the respective input fields.
+Click the "Add Transaction" button to save the new transaction.
+- Deleting Transactions
 
-### Making a Progressive Web App
+To delete a transaction, find the transaction you want to delete in the list.
+Click the "Delete" button next to the transaction you wish to remove.
+Confirm the deletion in the prompt that appears.
+- Sorting Transactions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To sort the list of transactions by category, click the "Sort by Category" button.
+To sort the list of transactions by description, click the "Sort by Description" button.
+- Searching Transactions
 
-### Advanced Configuration
+Use the search bar at the top of the page to search for transactions by description.
+As you type, the list of transactions will be filtered to show only those whose description matches the search term.
+- Viewing Transaction Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Each transaction is displayed as a list item with its date, description, category, and amount.
+The transaction amount is displayed in USD format with two decimal places.
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-### `npm run build` fails to minify
+#### You can reach me on :
+- Email: chepfaith18@gmail.com
+- Mattermost: @chepkoech.faith
+- Linkedin: @faith-chepkoech
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+

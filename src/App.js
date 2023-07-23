@@ -6,9 +6,7 @@ import TransactionList from './components/TransactionList';
 const App = () => {
   return (
     <div className="App">
-     
       <TransactionList />
-
     </div>
   );
 };
