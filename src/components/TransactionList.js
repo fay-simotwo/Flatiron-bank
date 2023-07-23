@@ -33,6 +33,8 @@ const [searchTerm, setSearchTerm] = useState(''); // State for storing the searc
       amount: parseFloat(amount), // Parsing the amount input value to a floating-point number
       category: category,
     };
+    setTransactions([...transactions, newTransaction]); // Adding the new transaction to the list of transactions
+
 
 
 
