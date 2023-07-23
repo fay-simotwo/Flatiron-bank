@@ -53,6 +53,12 @@ const handleDelete = (id) => {
     // Sorting the transactions array in place based on the category using localeCompare for string comparison
   };
 
+  // Sort transactions by description
+  const handleSortByDescription = () => {
+    setTransactions([...transactions.sort((a, b) => a.description.localeCompare(b.description))]);
+    // Sorting the transactions array in place based on the description using localeCompare for string comparison
+  };
+
 
 
 
