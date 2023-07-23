@@ -8,4 +8,6 @@ const TransactionList = () => {
 // State variables to manage transactions and form inputs
 const [transactions, setTransactions] = useState([]); // State for storing transaction data
 const [date, setDate] = useState(''); // State for storing the date input value
+const [description, setDescription] = useState(''); // State for storing the description input value
+
 
