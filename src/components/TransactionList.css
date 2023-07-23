@@ -5,5 +5,11 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
+  /* Center align the content within the container and add some top margin */
+.container {
+    text-align: center;
+    margin-top: 30px;
+  }
+
   
