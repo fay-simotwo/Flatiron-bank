@@ -5,3 +5,4 @@ import './TransactionList.css'; // Importing the CSS file for styling the Transa
 
 // Define the TransactionList component
 const TransactionList = () => {
+// State variables to manage transactions and form inputs
