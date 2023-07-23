@@ -67,8 +67,60 @@ const handleSearch = (event) => {
 const filteredTransactions = transactions.filter(transaction =>
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
     // Filtering the transactions array based on whether the description contains the search term (case-insensitive)
-  );      
-
+  );    
+    
+ // Render the TransactionList component
+ return (
+    <div className="container">
+      <h1 className="heading">Bank Transactions</h1>
+      <form onSubmit={handleSubmit} className="form">
+        {/* Form inputs to add a new transaction */}
+        <div className="inputWrapper">
+          <label htmlFor="date">Date</label>
+          <input
+            type="date"
+            id="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            className="input"
+          />
+        </div>
+        <div className="inputWrapper">
+          <label htmlFor="description">Description</label>
+          <input
+            type="text"
+            id="description"
+            placeholder="Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            className="input"
+          />
+        </div>
+        <div className="inputWrapper">
+          <label htmlFor="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Amount"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+            className="input"
+          />
+        </div>
+        <div className="inputWrapper">
+          <label htmlFor="category">Category</label>
+          <input
+            type="text"
+            id="category"
+            placeholder="Category"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            className="input"
+          />
+        </div>
+        <button type="submit" className="addButton">Add Transaction</button>
+      </form>
+      <div className="sortButtons">
 
 
 
