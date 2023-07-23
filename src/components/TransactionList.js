@@ -38,6 +38,15 @@ const [searchTerm, setSearchTerm] = useState(''); // State for storing the searc
     setDescription(''); // Resetting the description input value after submission
     setAmount(''); // Resetting the amount input value after submission
     setCategory(''); // Resetting the category input value after submission
+};
+
+// Handle deletion of a transaction
+const handleDelete = (id) => {
+    const updatedTransactions = transactions.filter(transaction => transaction.id !== id);
+    setTransactions(updatedTransactions); // Updating the state by removing the transaction with the specified id
+  };
+
+
 
 
 
