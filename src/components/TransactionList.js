@@ -23,6 +23,16 @@ const [searchTerm, setSearchTerm] = useState(''); // State for storing the searc
         console.error('Error fetching data:', error); // Handling errors if the data fetching fails
       });
   }, []);
+  // Handle form submission when adding a new transaction
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Preventing the default form submission behavior
+    const newTransaction = {
+      id: Math.random(), // Generating a random id for the new transaction (not ideal for production)
+      date: date,
+      description: description,
+      amount: parseFloat(amount), // Parsing the amount input value to a floating-point number
+      category: category,
+    };
 
 
 
