@@ -10,6 +10,8 @@ const [transactions, setTransactions] = useState([]); // State for storing trans
 const [date, setDate] = useState(''); // State for storing the date input value
 const [description, setDescription] = useState(''); // State for storing the description input value
 const [amount, setAmount] = useState(''); // State for storing the amount input value
+const [category, setCategory] = useState(''); // State for storing the category input value
+
 
 
 
