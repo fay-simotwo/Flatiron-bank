@@ -37,6 +37,8 @@ const [searchTerm, setSearchTerm] = useState(''); // State for storing the searc
     setDate(''); // Resetting the date input value after submission
     setDescription(''); // Resetting the description input value after submission
     setAmount(''); // Resetting the amount input value after submission
+    setCategory(''); // Resetting the category input value after submission
+
 
 
 
