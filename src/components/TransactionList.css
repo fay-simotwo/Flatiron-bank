@@ -107,6 +107,12 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+
+/* Styling for transaction information */
+.transactionInfo {
+    display: flex;
+    align-items: start;
+  }  
    
 
   
