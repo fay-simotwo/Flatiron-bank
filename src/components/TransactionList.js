@@ -59,6 +59,11 @@ const handleDelete = (id) => {
     // Sorting the transactions array in place based on the description using localeCompare for string comparison
   };
 
+    // Handle search input change
+    const handleSearch = (event) => {
+        setSearchTerm(event.target.value); // Updating the state with the search input value
+      };
+
 
 
 
