@@ -122,4 +122,11 @@ body {
     margin-right: 10px;
   }  
 
+/* Styling for transaction description */
+.transactionDescription {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+  }  
   
