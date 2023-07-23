@@ -9,5 +9,7 @@ const TransactionList = () => {
 const [transactions, setTransactions] = useState([]); // State for storing transaction data
 const [date, setDate] = useState(''); // State for storing the date input value
 const [description, setDescription] = useState(''); // State for storing the description input value
+const [amount, setAmount] = useState(''); // State for storing the amount input value
+
 
 
