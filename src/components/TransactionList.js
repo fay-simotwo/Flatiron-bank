@@ -13,6 +13,16 @@ const [amount, setAmount] = useState(''); // State for storing the amount input 
 const [category, setCategory] = useState(''); // State for storing the category input value
 const [searchTerm, setSearchTerm] = useState(''); // State for storing the search input value
 
+ // useEffect hook to fetch transactions from the server on component mount
+ useEffect(() => {
+    axios.get('http://localhost:3000/transactions') // Sending a GET request to fetch transaction data from the server
+      .then((response) => {
+        setTransactions(response.data); // Updating the state with fetched transaction data
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error); // Handling errors if the data fetching fails
+      });
+  }, []);
 
 
 
