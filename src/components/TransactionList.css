@@ -153,3 +153,23 @@ body {
     background-color: #d43f30;
   }  
   
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+    /* Adjust form layout for small screens */
+    .form {
+        flex-direction: column;
+    }
+    /* Reduce margin for input fields on small screens */
+    .input {
+        margin-bottom: 10px;
+    }
+    /* Adjust sort buttons layout for small screens */
+    .sortButtons {
+        flex-direction: column;
+    }
+    /* Reduce margin for sort buttons on small screens */
+    .sortButtons button {
+        margin-bottom: 10px;
+    }
+  }
+  
