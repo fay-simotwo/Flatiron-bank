@@ -34,6 +34,8 @@ const [searchTerm, setSearchTerm] = useState(''); // State for storing the searc
       category: category,
     };
     setTransactions([...transactions, newTransaction]); // Adding the new transaction to the list of transactions
+    setDate(''); // Resetting the date input value after submission
+
 
 
 
