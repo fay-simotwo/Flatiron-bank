@@ -68,7 +68,7 @@ const filteredTransactions = transactions.filter(transaction =>
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
     // Filtering the transactions array based on whether the description contains the search term (case-insensitive)
   );    
-    
+
  // Render the TransactionList component
  return (
     <div className="container">
@@ -121,6 +121,42 @@ const filteredTransactions = transactions.filter(transaction =>
         <button type="submit" className="addButton">Add Transaction</button>
       </form>
       <div className="sortButtons">
+        {/* Buttons to sort the transactions */}
+        <button onClick={handleSortByCategory}>Sort by Category</button>
+        <button onClick={handleSortByDescription}>Sort by Description</button>
+      </div>
+      <input
+        type="text"
+        placeholder="Search transactions..."
+        className="searchBar"
+        value={searchTerm}
+        onChange={handleSearch}
+      />
+      {/* List of transactions */}
+      <ul className="transactionList">
+        {filteredTransactions.map((transaction) => (
+          <li key={transaction.id} className="transactionItem">
+            {/* Displaying transaction information */}
+            <div className="transactionInfo">
+              <span className="transactionDate">{transaction.date}</span>
+              <span className="transactionDescription">{transaction.description}</span>
+              <span className="transactionCategory">{transaction.category}</span>
+            </div>
+            <span className="transactionAmount">
+              {typeof transaction.amount === 'number'
+                ? `$${transaction.amount.toFixed(2)}`
+                : 'Invalid Amount'}
+            </span>
+            {/* Button to delete a transaction */}
+            <button className="deleteButton" onClick={() => handleDelete(transaction.id)}>Delete</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default TransactionList;
 
 
 
