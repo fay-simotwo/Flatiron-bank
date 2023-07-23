@@ -114,5 +114,12 @@ body {
     align-items: start;
   }  
    
+/* Styling for transaction date */
+.transactionDate {
+    font-size: 14px;
+    color: #777;
+    text-align: end;
+    margin-right: 10px;
+  }  
 
   
