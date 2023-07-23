@@ -19,4 +19,13 @@ body {
     margin-bottom: 20px;
   }
 
+  /* Styles for the form containing input fields */
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
   
