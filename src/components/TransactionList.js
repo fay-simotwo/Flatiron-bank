@@ -7,4 +7,5 @@ import './TransactionList.css'; // Importing the CSS file for styling the Transa
 const TransactionList = () => {
 // State variables to manage transactions and form inputs
 const [transactions, setTransactions] = useState([]); // State for storing transaction data
+const [date, setDate] = useState(''); // State for storing the date input value
 
